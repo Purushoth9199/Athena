@@ -39,7 +39,7 @@ body.boxed-wrapper .page-wrapper,
 .financial-advice,
 .tabs-content__points li .icon,
 .blog-one__content {
-    background: #04000b;
+    background: #0d031e;
 }
 
 .get-to-know__img:before {
@@ -55,7 +55,7 @@ body.boxed-wrapper .page-wrapper,
 
 .get-to-know__progress .count-text,
 .financial-advice__tab-box .tab-buttons .tab-btn.active-btn span {
-    background: #6222cc;
+    background: #003b6d;
 }
 
 .get-to-know__progress .bar {
@@ -105,7 +105,7 @@ body.boxed-wrapper .page-wrapper,
 }
 
 .tabs-content__experience-btn {
-    color: #6222cc;
+    color: #003b6d;
 }
 
 .tabs-content__experience-btn:hover {

@@ -24,9 +24,9 @@
   --qutiiz-gray-rgb: 114, 109, 123;
   --qutiiz-white: #ffffff;
   --qutiiz-white-rgb: 255, 255, 255;
-  --qutiiz-black: #04000b;
+  --qutiiz-black: #000000;
   --qutiiz-black-rgb: 4, 0, 11;
-  --qutiiz-base: #6222cc;
+  --qutiiz-base: #003b6d;
   --qutiiz-base-rgb: 98, 34, 204;
   --qutiiz-bdr-radius: 8px;
 }
@@ -117,6 +117,10 @@ ul {
   .container {
     max-width: 1200px;
   }
+  .get-to-know__text-2 {
+    max-width: 1200px;
+    margin: 180px auto 0;
+  }
 }
 ::-moz-placeholder {
   color: inherit;
@@ -194,7 +198,7 @@ ul {
 
 .section-title {
   margin-top: -12px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .section-title__tagline {
@@ -374,9 +378,8 @@ ul {
 .main-menu-wrapper__logo {
   position: relative;
   float: left;
-  padding-top: 37px;
-  padding-bottom: 37px;
-  margin-right: 205px;
+  padding-bottom: 15px;
+  margin-right: 60px;
 }
 
 .main-menu-wrapper__main-menu {
@@ -478,13 +481,41 @@ ul {
 .main-menu .main-menu__list,
 .main-menu .main-menu__list ul,
 .stricky-header .main-menu__list,
-.stricky-header .main-menu__list ul {
+.stricky-header .main-menu__list ul,
+.newClass li ul
+  {
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 0px 200px;
   list-style-type: none;
   align-items: center;
   display: none;
 }
+
+/* Style for the h3 span */
+.newClass .dropdown .services-one__title .title-text{
+  color: var(--qutiiz-white)
+}
+/* Style for the h3 span */
+.newClass .dropdown .services-one__title .title-text:hover{
+  color: var(--qutiiz-base);
+}
+
+/* Style for the list spans */
+.newClass .dropdown ul .list-item-text {
+  color: grey; /* Text color for list items */
+  font-size: 14px; /* Font size for list items */
+  line-height: 1.4; /* Adjusted line height */
+  margin-left: 10px; /* Optional: Add some spacing for the list items */
+  word-wrap: break-word; /* Break long words to avoid overflow */
+  word-break: break-word; /* Break at any word boundary */
+}
+
+/* Optional: Add hover effect for list spans */
+.newClass .dropdown ul .list-item-text:hover {
+  color: black; /* Change color on hover */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
 
 @media (min-width: 1200px) {
   .main-menu .main-menu__list,
@@ -495,7 +526,9 @@ ul {
   }
 }
 .main-menu .main-menu__list > li,
-.stricky-header .main-menu__list > li {
+.stricky-header .main-menu__list > li
+.newClass > li > ul
+  {
   padding-top: 37px;
   padding-bottom: 37px;
   position: relative;
@@ -507,7 +540,9 @@ ul {
 }
 
 .main-menu .main-menu__list > li > a,
-.stricky-header .main-menu__list > li > a {
+.stricky-header .main-menu__list > li > a,
+.newClass > li > ul
+  {
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -521,7 +556,9 @@ ul {
 }
 
 .main-menu .main-menu__list > li > a::before,
-.stricky-header .main-menu__list > li > a::before {
+.stricky-header .main-menu__list > li > a::before,
+.newClass > li > ul::before
+  {
   content: "";
   height: 1px;
   border-radius: 0px;
@@ -539,14 +576,17 @@ ul {
 .main-menu .main-menu__list > li.current > a,
 .main-menu .main-menu__list > li:hover > a,
 .stricky-header .main-menu__list > li.current > a,
-.stricky-header .main-menu__list > li:hover > a {
+.stricky-header .main-menu__list > li:hover > a
+  {
   color: var(--qutiiz-white);
 }
 
 .main-menu .main-menu__list > li.current > a::before,
 .main-menu .main-menu__list > li:hover > a::before,
 .stricky-header .main-menu__list > li.current > a::before,
-.stricky-header .main-menu__list > li:hover > a::before {
+.stricky-header .main-menu__list > li:hover > a::before,
+.newClass > li:hover > ul::before
+  {
   transform: scale(1, 1);
   transform-origin: right center;
 }
@@ -562,7 +602,8 @@ ul {
 .main-menu .main-menu__list > li > ul,
 .main-menu .main-menu__list > li > ul > li > ul,
 .stricky-header .main-menu__list > li > ul,
-.stricky-header .main-menu__list > li > ul > li > ul {
+.stricky-header .main-menu__list > li > ul > li > ul,
+.newClass > li > ul {
   position: absolute;
   top: 100%;
   left: 0;
@@ -586,7 +627,8 @@ ul {
 .main-menu .main-menu__list > li:hover > ul,
 .main-menu .main-menu__list > li > ul > li:hover > ul,
 .stricky-header .main-menu__list > li:hover > ul,
-.stricky-header .main-menu__list > li > ul > li:hover > ul {
+.stricky-header .main-menu__list > li > ul > li:hover > ul,
+.newClass > li:hover > ul {
   opacity: 1;
   visibility: visible;
   transform: scaleY(1) translateZ(0px);
@@ -605,7 +647,8 @@ ul {
 }
 
 .main-menu .main-menu__list li ul li a,
-.stricky-header .main-menu__list li ul li a {
+.stricky-header .main-menu__list li ul li a,
+.newClass > li > ul {
   font-size: 16px;
   line-height: 30px;
   color: var(--qutiiz-black);
@@ -622,19 +665,24 @@ ul {
 }
 
 .main-menu .main-menu__list li ul > li:first-child > a,
-.stricky-header .main-menu__list li ul > li:first-child > a {
+.stricky-header .main-menu__list li ul > li:first-child > a
+.newClass > li:first-child > ul
+  {
   border-top-left-radius: var(--qutiiz-bdr-radius);
   border-top-right-radius: var(--qutiiz-bdr-radius);
 }
 
 .main-menu .main-menu__list li ul > li:last-child > a,
-.stricky-header .main-menu__list li ul > li:last-child > a {
+.stricky-header .main-menu__list li ul > li:last-child > a
+.newClass > li:last-child > ul
+ {
   border-bottom-left-radius: var(--qutiiz-bdr-radius);
   border-bottom-right-radius: var(--qutiiz-bdr-radius);
 }
 
 .main-menu .main-menu__list li ul li:hover > a,
-.stricky-header .main-menu__list li ul li:hover > a {
+.stricky-header .main-menu__list li ul li:hover > a
+{
   background-color: var(--qutiiz-base);
   color: var(--qutiiz-white);
 }
@@ -2205,6 +2253,7 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   counter-reset: count;
+  justify-content: space-between;
 }
 
 .services-one__single {
@@ -2305,7 +2354,6 @@ ul {
   position: relative;
   display: block;
   text-align: center;
-  border-top: 1px solid rgba(var(--qutiiz-white-rgb), 0.1);
   padding: 48px 0 51px;
 }
 
@@ -2347,7 +2395,7 @@ ul {
 .get-to-know {
   position: relative;
   display: block;
-  padding: 140px 0 120px;
+  padding: 100px 0 80px;
 }
 
 .get-to-know__left {
@@ -2472,14 +2520,14 @@ ul {
 
 .get-to-know__text-1 {
   font-size: 24px;
-  color: var(--qutiiz-base);
+  color: var(--qutiiz-white);
   margin: 0;
   line-height: 36px;
-  padding-bottom: 40px;
 }
 
 .get-to-know__text-2 {
   margin: 0;
+  padding: 50px 0px 0px;
 }
 
 .get-to-know__progress {
@@ -2611,7 +2659,7 @@ ul {
 .brand-one {
   position: relative;
   display: block;
-  padding: 98px 0 99px;
+  padding: 0px 0 90px;
   border-bottom: 1px solid #e2e0e5;
 }
 
@@ -2831,7 +2879,7 @@ ul {
 .counter-one {
   position: relative;
   display: block;
-  background-color: var(--qutiiz-base);
+  background-color: #0D031E;
   padding: 120px 0 280px;
   overflow: hidden;
   z-index: 1;
@@ -2913,7 +2961,6 @@ ul {
   position: relative;
   height: 118px;
   width: 118px;
-  background-color: #541daf;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3159,6 +3206,8 @@ ul {
 
 .team-one__img img {
   width: 100%;
+  /* height: 525px; */
+  object-fit: cover;
   mix-blend-mode: luminosity;
   transform: scale(1);
   transition: all 500ms ease;
@@ -3381,6 +3430,18 @@ ul {
 .testimonial-one__carousel {
   position: relative;
   display: block;
+  overflow: hidden; /* Ensure no content overflows the carousel container */
+
+}
+
+.policy-one__single {
+  position: relative;
+  display: block;
+  border-radius: var(--qutiiz-bdr-radius);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 39px 50px 50px;
+  transition: all 500ms ease;
 }
 
 .testimonial-one__single {
@@ -3397,8 +3458,85 @@ ul {
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
 }
 
-.testimonial-one__text {
+/* .testimonial-one__text {
   margin: 0;
+} */
+
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+/* .testimonial-one__text_tc::-webkit-scrollbar {
+  display: none;
+} */
+
+.gap-heading {
+  margin-bottom: 10px; /* Adjust this value for the desired gap */
+  font-size: 22px; /* Optional: Adjust font size */
+  font-weight: bold; /* Optional: Make headings bold */
+}
+
+.gap-paragraph {
+  margin-bottom: 20px; /* Add space after paragraphs if needed */
+  font-size: 18px; /* Optional: Adjust font size for content */
+  line-height: 1.6; /* Optional: Improve readability with line spacing */
+}
+
+ul {
+  margin-top: 10px; /* Add space between headings and lists */
+  margin-bottom: 20px; /* Space after the list */
+  padding-left: 20px; /* Indent list items */
+}
+
+.policy-one__text {
+  max-height: 1000px; /* Set your desired height */
+  overflow: hidden; /* Hide the scroll bar */
+  text-overflow: ellipsis;
+  position: relative;
+  overflow-y: scroll; /* Enable vertical scrolling for the text */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE */
+
+}
+
+.policy-one__text:hover {
+  overflow-y: auto; /* Allow vertical scroll only on hover */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.policy-one__text::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Edge, and Safari */
+}
+
+.testimonial-one__text_tc {
+  max-height: 1000px; /* Set your desired height */
+  overflow: hidden; /* Hide the scroll bar */
+  text-overflow: ellipsis;
+  position: relative;
+  overflow-y: scroll; /* Enable vertical scrolling for the text */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE */
+
+}
+
+.testimonial-one__text_tc:hover {
+  overflow-y: auto; /* Allow vertical scroll only on hover */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.testimonial-one__text_tc::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Edge, and Safari */
+}
+
+
+.testimonial-one__text {
+  max-height: 175px; /* Limit the height to show only a few lines */
+  overflow-y: scroll; /* Enable vertical scrolling for the text */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.testimonial-one__text::-webkit-scrollbar {
+  display: none;
 }
 
 .testimonial-one__client-info {
@@ -3417,14 +3555,14 @@ ul {
 
 .testimonial-one__client-img > img {
   border-radius: 50%;
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
   width: auto !important;
 }
 
 .testimonial-one__quote {
   position: absolute;
-  height: 36px;
-  width: 36px;
+  height: 28px;
+  width: 28px;
   background-color: var(--qutiiz-base);
   border-radius: 50%;
   display: flex;
@@ -4347,7 +4485,7 @@ ul {
 }
 
 .site-footer__top-right-social a + a {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .site-footer__middle {
