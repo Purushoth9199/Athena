@@ -2,8 +2,8 @@ body,
 body.boxed-wrapper .page-wrapper,
 .why-choose-one__right:before,
 .tabs-content__inner {
-    background-color: #0d031e;
-    color: #a09baa;
+    background-color: #003b6d;
+    color: #ffffff;
 }
 
 
@@ -35,11 +35,10 @@ body.boxed-wrapper .page-wrapper,
 
 .team-one__content,
 .team-one__hover,
-.testimonial-one,
 .financial-advice,
 .tabs-content__points li .icon,
 .blog-one__content {
-    background: #0d031e;
+    background: #000000;
 }
 
 .get-to-know__img:before {
@@ -50,7 +49,7 @@ body.boxed-wrapper .page-wrapper,
 .project-filter.style1 li .filter-text,
 .financial-advice__bottom-text,
 .blog-one__meta li a {
-    color: #a09baa;
+    color: #ffffff;
 }
 
 .get-to-know__progress .count-text,
@@ -80,16 +79,20 @@ body.boxed-wrapper .page-wrapper,
 
 .testimonial-one .custom-nav .owl-prev {
     color: #ffffff;
-    background: #0d031e;
+    background: #000000;
 }
 
 .testimonial-one .custom-nav .owl-next {
     color: #ffffff;
-    background: #0d031e;
+    background: #000000;
+}
+
+.testimonial-one
+{    background: #003b6d;
 }
 
 .testimonial-one__single {
-    background: #0d031e;
+    background: #000000;
 }
 
 .testimonial-one__client-name {
