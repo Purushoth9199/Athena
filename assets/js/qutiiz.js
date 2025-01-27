@@ -395,6 +395,9 @@
         },
         subject: {
           required: true
+        },
+        number:{
+          required: true
         }
       },
       submitHandler: function (form) {

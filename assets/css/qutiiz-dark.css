@@ -95,6 +95,9 @@ body.boxed-wrapper .page-wrapper,
     background: #000000;
 }
 
+.testimonial-one__single_tc {
+    background: #ffffff;
+}
 .testimonial-one__client-name {
     color: #ffffff;
 }
