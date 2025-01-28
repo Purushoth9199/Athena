@@ -4527,6 +4527,7 @@ ul {
   display: block;
 }
 
+
 .footer-widget__about {
   position: relative;
   display: block;
@@ -4693,7 +4694,7 @@ ul {
   display: block;
   background-color: #000000;
   margin-left: 50px;
-  padding: 41px 50px 41px;
+  padding: 20px;
   margin-top: 8px;
   border-radius: var(--qutiiz-bdr-radius);
   border: 1px solid rgba(var(--qutiiz-white-rgb), 0.1);
@@ -11585,7 +11586,7 @@ body.boxed-wrapper {
     position: relative;
     margin-top: 15px;
     padding: 10px;
-    z-index: 10;
+    z-index: 100;
   }
 
   .services-one__title {
@@ -12424,8 +12425,6 @@ body.boxed-wrapper {
   }
   .footer-widget__newsletter {
     margin-left: 0;
-    margin-top: 41px;
-    padding: 41px 20px 41px;
   }
   .site-footer__bottom-inner {
     flex-direction: column;
